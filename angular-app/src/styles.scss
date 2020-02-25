@@ -1,0 +1,15 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.map_box_container {
+  position: relative;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.map_content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
