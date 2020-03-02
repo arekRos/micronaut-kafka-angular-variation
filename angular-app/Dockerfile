@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:11 AS builder
+FROM mhart/alpine-node:12 AS builder
 
 WORKDIR /app
 COPY package.json package.json
@@ -16,7 +16,6 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d
 # Copy production build to server folder
 
-COPY  dist/web /usr/share/nginx/html
-COPY  owocowe-biuro* /tmp/
+COPY  dist/angular-app /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

@@ -1,5 +1,11 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: calc(100% - 35px);
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .map_box_container {
   position: relative;
@@ -12,4 +18,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+.marker {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.title-center {
+  margin: 0 auto;
+}
+
+.rider-hover {
+  color: red
+}
+
+.rider-selected {
+  color: green
 }

@@ -12,19 +12,28 @@ services:
     environment:
       ADVERTISED_HOST: localhost
       ADVERTISED_PORT: 9092
+
   kafka_manager:
     image: "mzagar/kafka-manager-docker:1.3.3.4"
     container_name: kafkamanager
     network_mode: host
     ports:
       - 9000:9000
+
   angular-app:
     build: ./angular-app
     image: angular-app
     container_name: angular-app
     network_mode: host
+    ports:
+      - 80:80
+    command: nginx -g "daemon off;"
+
   micronaut-app:
     build: ./micronaut-app
     image: micronaut-app
     container_name: micronaut-app
     network_mode: host
+    ports:
+      - 8080:8080
+      - 443:443

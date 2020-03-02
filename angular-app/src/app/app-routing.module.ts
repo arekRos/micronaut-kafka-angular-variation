@@ -7,6 +7,9 @@ import {RiderComponent} from "./rider/rider.component";
 const routes: Routes = [
   {path: "driver", component: DriverComponent},
   {path: "rider", component: RiderComponent},
+  {path: "", redirectTo: "driver", pathMatch: "full"},
+  {path: "**", component: DriverComponent}
+
 ];
 
 @NgModule({

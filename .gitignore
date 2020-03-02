@@ -45,3 +45,4 @@ testem.log
 Thumbs.db
 *.iml
 /angular-app/node_modules/
+/angular-app/dist/angular-app/
