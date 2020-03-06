@@ -1,7 +1,7 @@
 # Micronaut-Kafka-Angular-Variation  
-Simple implementation of kafka stream processing 'koober' example. 
+Variation of 'koober' example: 
 ```$xslt
----> tutaj link
+https://github.com/jamesward/koober
 ```
 
 ### Technology Stack:
@@ -15,3 +15,8 @@ Simple implementation of kafka stream processing 'koober' example.
 1. docker-compose up -d
 2. Go to ```localhost:4200/driver```
 3. Go to ```localhost:4200/rider``` and click on the map
+4. On driver page select rider icon. Navigation should start after that.
+
+
+### Demo gif
+todo
